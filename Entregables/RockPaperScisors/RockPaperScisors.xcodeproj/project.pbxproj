@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74A2536F212104A800277A7C /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2536E212104A800277A7C /* FinalViewController.swift */; };
 		CA9FC379211F60680092825F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FC378211F60680092825F /* AppDelegate.swift */; };
 		CA9FC37B211F60680092825F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FC37A211F60680092825F /* ViewController.swift */; };
 		CA9FC37E211F60680092825F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9FC37C211F60680092825F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74A2536E212104A800277A7C /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		CA9FC375211F60680092825F /* RockPaperScisors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScisors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9FC378211F60680092825F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA9FC37A211F60680092825F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				CA9FC38A211F64980092825F /* GameState.swift */,
 				CA9FC38C211F654F0092825F /* Sign.swift */,
 				CA9FC37C211F60680092825F /* Main.storyboard */,
+				74A2536E212104A800277A7C /* FinalViewController.swift */,
 				CA9FC37F211F60690092825F /* Assets.xcassets */,
 				CA9FC381211F60690092825F /* LaunchScreen.storyboard */,
 				CA9FC384211F60690092825F /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A2536F212104A800277A7C /* FinalViewController.swift in Sources */,
 				CA9FC38B211F64980092825F /* GameState.swift in Sources */,
 				CA9FC37B211F60680092825F /* ViewController.swift in Sources */,
 				CA9FC38D211F654F0092825F /* Sign.swift in Sources */,

@@ -23,9 +23,59 @@ enum Sign {
     }
     func compare(_ opponent: Sign) -> GameState {
         
-       /* if opponent.rock {
-            
-        }*/
+        switch opponent {
+        case .rock:
+            if self == .rock {
+                return .draw
+            }
+            else if self == .paper {
+                return .win
+            } else {
+                return .lose
+            }
+        case .paper:
+            if self == .rock {
+                return .lose
+            }
+            else if self == .paper {
+                return .draw
+            } else {
+                return .win
+            }
+        case .scissor:
+            if self == .rock {
+                return .win
+            }
+            else if self == .paper {
+                return .lose
+            } else {
+                return .draw
+            }
+        }
         
     }
 }
+
+func getSign(_ map: Int) -> Sign {
+    
+    
+    if map == 0 {
+        return .rock
+    } else if map == 1 {
+        return .paper
+    } else {
+        return .scissor
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
