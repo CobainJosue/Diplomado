@@ -1,0 +1,23 @@
+Cotizar un proyecto
+
+4 hrs = 1 dia
+
+Asesoramiento.
+Requerimientos -> $$
+Documento de analisis de requerimientos funcionales -> $$
+
+cada vista tiene una complejidad
+
+facil = 4 hrs
+medio = 16 hrs
+complejo = 24 hrs
+experto = 48 hrs
+
+total de hora * .20 = gran total
+
+gran total * costo hora * 1.16 * 1.32 * .30
+
+1.16 = isr
+1.32 = iva
+.30 = colchon
+Es mejor cobrar caro para negociar.
