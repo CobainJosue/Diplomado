@@ -5,4 +5,4 @@ Material respectivo al diplomado de Desarrollo de aplicaciones móviles con iOS
 
 En el siguiente enlace esta la carpeta con todos los entregables para la evaluación del diplomado:
 
-![Entregables](Entregables)
+<p style="font-size: 20px;">[Entregables](Entregables)</p>
