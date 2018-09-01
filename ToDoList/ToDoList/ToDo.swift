@@ -7,7 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 struct ToDo {
-    
+    var title: String
+    var isComplete: Bool
+    var dueDate: Date
+    var notes: String?
 }
