@@ -19,13 +19,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCellIdentifier" id="98v-kv-IEf">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCellIdentifier" id="98v-kv-IEf" customClass="ToDoCell" customModule="ToDoList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="98v-kv-IEf" id="QNn-kX-Brc">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Is-2a-Qi8">
+                                            <rect key="frame" x="8" y="3" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="KeD-4U-9MV"/>
+                                                <constraint firstAttribute="width" constant="36" id="e4V-Ey-Eyy"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="blanco"/>
+                                            <state key="selected" image="check"/>
+                                            <connections>
+                                                <action selector="completeButtonTapped" destination="98v-kv-IEf" eventType="touchUpInside" id="nKc-e1-MJu"/>
+                                                <action selector="isCompleteButtonTapped:" destination="awh-HI-biD" eventType="touchUpInside" id="U1S-vL-ooZ"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvx-e6-faO">
+                                            <rect key="frame" x="52" y="11.5" width="299" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Wvx-e6-faO" firstAttribute="leading" secondItem="1Is-2a-Qi8" secondAttribute="trailing" constant="8" id="A3h-r4-uIW"/>
+                                        <constraint firstItem="Wvx-e6-faO" firstAttribute="centerY" secondItem="QNn-kX-Brc" secondAttribute="centerY" id="PiX-Bt-Hmo"/>
+                                        <constraint firstItem="1Is-2a-Qi8" firstAttribute="centerY" secondItem="QNn-kX-Brc" secondAttribute="centerY" id="d7S-Rx-vwD"/>
+                                        <constraint firstItem="1Is-2a-Qi8" firstAttribute="leading" secondItem="QNn-kX-Brc" secondAttribute="leading" constant="8" id="hDP-O5-X1x"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Wvx-e6-faO" secondAttribute="trailing" constant="8" id="k0m-wm-PLv"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="isCompleteButton" destination="1Is-2a-Qi8" id="M8q-Tm-eHT"/>
+                                    <outlet property="titleLabel" destination="Wvx-e6-faO" id="fnV-1D-Ngk"/>
+                                    <segue destination="awh-HI-biD" kind="show" identifier="showDetails" id="kBW-mn-UPK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -43,7 +76,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fN-24-s4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="510" y="480"/>
+            <point key="canvasLocation" x="509.60000000000002" y="479.91004497751129"/>
         </scene>
         <!--New ToDo-->
         <scene sceneID="DGu-ch-WHx">
@@ -69,14 +102,21 @@
                                                         <constraint firstAttribute="width" constant="36" id="9WO-o4-RYm"/>
                                                         <constraint firstAttribute="height" constant="36" id="R1o-uv-A75"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" title="Button" image="blanco"/>
                                                     <state key="selected" image="check"/>
+                                                    <connections>
+                                                        <action selector="isCompleteButtonTapped:" destination="awh-HI-biD" eventType="touchUpInside" id="QIU-8X-kf8"/>
+                                                    </connections>
                                                 </button>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Remind me to..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpZ-Gx-lg1">
                                                     <rect key="frame" x="60" y="6" width="299" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="returnPressed:" destination="awh-HI-biD" eventType="primaryActionTriggered" id="RFx-ft-DbL"/>
+                                                        <action selector="textEditingChanged:" destination="awh-HI-biD" eventType="editingChanged" id="gCw-sN-72m"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -112,20 +152,22 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KkR-0n-XYn">
-                                                    <rect key="frame" x="0.0" y="27" width="375" height="216"/>
+                                                    <rect key="frame" x="0.0" y="27" width="375" height="165"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="165" id="KR8-Tr-1n2"/>
                                                     </constraints>
                                                     <date key="date" timeIntervalSinceReferenceDate="558053172.01938796">
                                                         <!--2018-09-07 22:46:12 +0000-->
                                                     </date>
+                                                    <connections>
+                                                        <action selector="datePickerChanged:" destination="awh-HI-biD" eventType="primaryActionTriggered" id="eGf-j2-HED"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="KkR-0n-XYn" firstAttribute="top" secondItem="scr-jA-6Wc" secondAttribute="topMargin" constant="16" id="36N-3K-Fmh"/>
                                                 <constraint firstItem="BUi-YA-g2d" firstAttribute="top" secondItem="scr-jA-6Wc" secondAttribute="top" constant="11" id="Cmh-xf-AMr"/>
                                                 <constraint firstAttribute="trailing" secondItem="fkU-uc-jYF" secondAttribute="trailing" constant="16" id="MYO-Ct-dK7"/>
-                                                <constraint firstItem="KkR-0n-XYn" firstAttribute="bottom" secondItem="scr-jA-6Wc" secondAttribute="bottomMargin" id="Orl-41-Asr"/>
                                                 <constraint firstItem="fkU-uc-jYF" firstAttribute="top" secondItem="scr-jA-6Wc" secondAttribute="top" constant="11" id="lgq-kn-ZXO"/>
                                                 <constraint firstAttribute="trailing" secondItem="KkR-0n-XYn" secondAttribute="trailing" id="mT9-SC-eyb"/>
                                                 <constraint firstItem="KkR-0n-XYn" firstAttribute="leading" secondItem="scr-jA-6Wc" secondAttribute="leading" id="pyf-Ws-Lwb"/>
@@ -185,6 +227,7 @@
                         <outlet property="dueDatePickerView" destination="KkR-0n-XYn" id="0Y3-At-vWK"/>
                         <outlet property="isCompleteButton" destination="Cc8-mm-eC4" id="Msb-M1-nJy"/>
                         <outlet property="notesTextView" destination="Gue-Mb-hNM" id="arw-dl-dQR"/>
+                        <outlet property="saveButton" destination="uJO-4A-aZa" id="M9j-Zb-upM"/>
                         <outlet property="titleTextField" destination="gpZ-Gx-lg1" id="MQO-qF-X5w"/>
                     </connections>
                 </tableViewController>
@@ -207,7 +250,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Z2-JP-pIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="480"/>
+            <point key="canvasLocation" x="1414" y="967"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9MW-ha-orE">
@@ -227,6 +270,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blanco" width="1024" height="1024"/>
         <image name="check" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kBW-mn-UPK"/>
+    </inferredMetricsTieBreakers>
 </document>

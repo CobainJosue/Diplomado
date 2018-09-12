@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740814FD21473BB1007225A5 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740814FC21473BB1007225A5 /* ToDoCell.swift */; };
 		74AC51612143394700AFBA58 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AC51602143394700AFBA58 /* ToDoViewController.swift */; };
 		CA9A416A2139FC9E00998665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9A41692139FC9E00998665 /* AppDelegate.swift */; };
 		CA9A416F2139FC9E00998665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9A416D2139FC9E00998665 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740814FC21473BB1007225A5 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		74AC51602143394700AFBA58 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		CA9A41662139FC9E00998665 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9A41692139FC9E00998665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				74AC51602143394700AFBA58 /* ToDoViewController.swift */,
 				CA9A417B213A061200998665 /* ToDo.swift */,
 				CAA872B4213AD8EC003845BA /* ToDoTableViewController.swift */,
+				740814FC21473BB1007225A5 /* ToDoCell.swift */,
 				CA9A41702139FCA100998665 /* Assets.xcassets */,
 				CA9A41722139FCA100998665 /* LaunchScreen.storyboard */,
 				CA9A41752139FCA100998665 /* Info.plist */,
@@ -145,6 +148,7 @@
 				CAA872B5213AD8ED003845BA /* ToDoTableViewController.swift in Sources */,
 				CA9A417C213A061200998665 /* ToDo.swift in Sources */,
 				74AC51612143394700AFBA58 /* ToDoViewController.swift in Sources */,
+				740814FD21473BB1007225A5 /* ToDoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
