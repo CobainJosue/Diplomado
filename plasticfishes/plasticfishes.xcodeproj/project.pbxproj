@@ -14,6 +14,9 @@
 		74368989214C6CC900AB3192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74368988214C6CC900AB3192 /* Assets.xcassets */; };
 		7436898C214C6CC900AB3192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7436898A214C6CC900AB3192 /* LaunchScreen.storyboard */; };
 		74368997214C6CC900AB3192 /* plasticfishesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74368996214C6CC900AB3192 /* plasticfishesTests.swift */; };
+		743689A6214C833300AB3192 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689A5214C833300AB3192 /* DataSource.swift */; };
+		743689A8214C842300AB3192 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689A7214C842300AB3192 /* Fish.swift */; };
+		743689AB214C881600AB3192 /* FishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689AA214C881600AB3192 /* FishService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		74368992214C6CC900AB3192 /* plasticfishesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plasticfishesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74368996214C6CC900AB3192 /* plasticfishesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plasticfishesTests.swift; sourceTree = "<group>"; };
 		74368998214C6CC900AB3192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743689A5214C833300AB3192 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		743689A7214C842300AB3192 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		743689AA214C881600AB3192 /* FishService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +85,13 @@
 		7436897E214C6CC700AB3192 /* plasticfishes */ = {
 			isa = PBXGroup;
 			children = (
-				7436897F214C6CC700AB3192 /* AppDelegate.swift */,
-				74368981214C6CC700AB3192 /* MasterViewController.swift */,
-				74368983214C6CC700AB3192 /* DetailViewController.swift */,
+				743689A9214C879100AB3192 /* services */,
+				743689A4214C832200AB3192 /* network */,
+				743689A1214C70F300AB3192 /* models */,
+				743689A3214C715900AB3192 /* views */,
+				743689A2214C70FC00AB3192 /* controllers */,
 				74368985214C6CC700AB3192 /* Main.storyboard */,
+				7436897F214C6CC700AB3192 /* AppDelegate.swift */,
 				74368988214C6CC900AB3192 /* Assets.xcassets */,
 				7436898A214C6CC900AB3192 /* LaunchScreen.storyboard */,
 				7436898D214C6CC900AB3192 /* Info.plist */,
@@ -97,6 +106,46 @@
 				74368998214C6CC900AB3192 /* Info.plist */,
 			);
 			path = plasticfishesTests;
+			sourceTree = "<group>";
+		};
+		743689A1214C70F300AB3192 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				743689A7214C842300AB3192 /* Fish.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		743689A2214C70FC00AB3192 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74368981214C6CC700AB3192 /* MasterViewController.swift */,
+				74368983214C6CC700AB3192 /* DetailViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		743689A3214C715900AB3192 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		743689A4214C832200AB3192 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				743689A5214C833300AB3192 /* DataSource.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		743689A9214C879100AB3192 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				743689AA214C881600AB3192 /* FishService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743689A8214C842300AB3192 /* Fish.swift in Sources */,
 				74368984214C6CC700AB3192 /* DetailViewController.swift in Sources */,
 				74368982214C6CC700AB3192 /* MasterViewController.swift in Sources */,
+				743689A6214C833300AB3192 /* DataSource.swift in Sources */,
 				74368980214C6CC700AB3192 /* AppDelegate.swift in Sources */,
+				743689AB214C881600AB3192 /* FishService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
