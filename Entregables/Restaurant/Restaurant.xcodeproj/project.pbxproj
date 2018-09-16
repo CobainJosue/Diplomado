@@ -12,6 +12,10 @@
 		743689BE214DF64C00AB3192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743689BC214DF64C00AB3192 /* Main.storyboard */; };
 		743689C0214DF65000AB3192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743689BF214DF65000AB3192 /* Assets.xcassets */; };
 		743689C3214DF65000AB3192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743689C1214DF65000AB3192 /* LaunchScreen.storyboard */; };
+		743689CB214DFBA000AB3192 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689CA214DFBA000AB3192 /* CategoryTableViewController.swift */; };
+		743689CD214DFBB100AB3192 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689CC214DFBB100AB3192 /* MenuTableViewController.swift */; };
+		743689CF214DFBC300AB3192 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689CE214DFBC300AB3192 /* OrderTableViewController.swift */; };
+		743689D1214DFD1700AB3192 /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		743689BF214DF65000AB3192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		743689C2214DF65000AB3192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		743689C4214DF65000AB3192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743689CA214DFBA000AB3192 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		743689CC214DFBB100AB3192 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		743689CE214DFBC300AB3192 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				743689B8214DF64C00AB3192 /* AppDelegate.swift */,
 				743689BA214DF64C00AB3192 /* ViewController.swift */,
 				743689BC214DF64C00AB3192 /* Main.storyboard */,
+				743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */,
+				743689CA214DFBA000AB3192 /* CategoryTableViewController.swift */,
+				743689CC214DFBB100AB3192 /* MenuTableViewController.swift */,
+				743689CE214DFBC300AB3192 /* OrderTableViewController.swift */,
 				743689BF214DF65000AB3192 /* Assets.xcassets */,
 				743689C1214DF65000AB3192 /* LaunchScreen.storyboard */,
 				743689C4214DF65000AB3192 /* Info.plist */,
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743689CD214DFBB100AB3192 /* MenuTableViewController.swift in Sources */,
+				743689D1214DFD1700AB3192 /* MenuItemDetailViewController.swift in Sources */,
+				743689CF214DFBC300AB3192 /* OrderTableViewController.swift in Sources */,
 				743689BB214DF64C00AB3192 /* ViewController.swift in Sources */,
 				743689B9214DF64C00AB3192 /* AppDelegate.swift in Sources */,
+				743689CB214DFBA000AB3192 /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
