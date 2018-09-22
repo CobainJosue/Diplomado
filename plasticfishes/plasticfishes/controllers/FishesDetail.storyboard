@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fishes Detail View Controller-->
+        <scene sceneID="h5y-x9-d2L">
+            <objects>
+                <viewController storyboardIdentifier="detailVC" id="bdY-Wa-Pst" customClass="FishesDetailViewController" customModule="plasticfishes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fll-l5-EBc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hqa-Ec-bfm">
+                                <rect key="frame" x="67" y="127" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7tJ-H9-pJR">
+                                <rect key="frame" x="0.0" y="279" width="375" height="388"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hqa-Ec-bfm" firstAttribute="leading" secondItem="wsQ-Xx-NzN" secondAttribute="leading" constant="67" id="0qV-Jg-u9z"/>
+                            <constraint firstItem="hqa-Ec-bfm" firstAttribute="top" secondItem="wsQ-Xx-NzN" secondAttribute="top" constant="107" id="2Sv-HU-rZU"/>
+                            <constraint firstItem="wsQ-Xx-NzN" firstAttribute="bottom" secondItem="hqa-Ec-bfm" secondAttribute="bottom" constant="412" id="7gN-T5-gBV"/>
+                            <constraint firstItem="wsQ-Xx-NzN" firstAttribute="trailing" secondItem="hqa-Ec-bfm" secondAttribute="trailing" constant="68" id="O3L-Ws-Un5"/>
+                            <constraint firstItem="7tJ-H9-pJR" firstAttribute="top" secondItem="hqa-Ec-bfm" secondAttribute="bottom" constant="24" id="gtp-BU-gYv"/>
+                            <constraint firstItem="wsQ-Xx-NzN" firstAttribute="trailing" secondItem="7tJ-H9-pJR" secondAttribute="trailing" id="nrs-zb-4rk"/>
+                            <constraint firstItem="7tJ-H9-pJR" firstAttribute="leading" secondItem="wsQ-Xx-NzN" secondAttribute="leading" id="tLZ-x9-6l9"/>
+                            <constraint firstItem="wsQ-Xx-NzN" firstAttribute="bottom" secondItem="7tJ-H9-pJR" secondAttribute="bottom" id="zfa-oF-FzM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wsQ-Xx-NzN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vEW-lH-yMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="168"/>
+        </scene>
+    </scenes>
+</document>

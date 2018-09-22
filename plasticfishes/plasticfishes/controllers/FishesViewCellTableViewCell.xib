@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fishCell" rowHeight="70" id="KGk-i7-Jjw" customClass="FishesViewCellTableViewCell" customModule="plasticfishes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edg-Ms-GBc">
+                        <rect key="frame" x="16" y="11" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="IKA-JW-9TZ"/>
+                            <constraint firstAttribute="height" constant="48" id="Q0Y-Ri-9ip"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yY-UB-UmX">
+                        <rect key="frame" x="97" y="11" width="188" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8P-mf-AKi">
+                        <rect key="frame" x="97" y="43" width="188" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="edg-Ms-GBc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="EpR-ck-vHO"/>
+                    <constraint firstItem="edg-Ms-GBc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Hsg-Eq-f2b"/>
+                    <constraint firstAttribute="trailing" secondItem="O8P-mf-AKi" secondAttribute="trailing" constant="35" id="Q4j-D9-Wcu"/>
+                    <constraint firstItem="8yY-UB-UmX" firstAttribute="leading" secondItem="edg-Ms-GBc" secondAttribute="trailing" constant="33" id="aGl-eh-SQn"/>
+                    <constraint firstItem="O8P-mf-AKi" firstAttribute="leading" secondItem="edg-Ms-GBc" secondAttribute="trailing" constant="33" id="k38-f5-oNf"/>
+                    <constraint firstAttribute="bottom" secondItem="O8P-mf-AKi" secondAttribute="bottom" constant="10.5" id="oRO-cr-2xj"/>
+                    <constraint firstItem="8yY-UB-UmX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="tF3-GV-8xE"/>
+                    <constraint firstAttribute="trailing" secondItem="8yY-UB-UmX" secondAttribute="trailing" constant="35" id="y8A-Gb-d8b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fishImageView" destination="edg-Ms-GBc" id="fDt-Ko-P2z"/>
+                <outlet property="fishSubtitleLabel" destination="O8P-mf-AKi" id="b6R-EE-cPp"/>
+                <outlet property="fishTitleLabel" destination="8yY-UB-UmX" id="kGN-TT-Zci"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="166.41679160419793"/>
+        </tableViewCell>
+    </objects>
+</document>

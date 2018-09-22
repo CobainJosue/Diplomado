@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		74368980214C6CC700AB3192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7436897F214C6CC700AB3192 /* AppDelegate.swift */; };
-		74368982214C6CC700AB3192 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74368981214C6CC700AB3192 /* MasterViewController.swift */; };
-		74368984214C6CC700AB3192 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74368983214C6CC700AB3192 /* DetailViewController.swift */; };
-		74368987214C6CC700AB3192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74368985214C6CC700AB3192 /* Main.storyboard */; };
 		74368989214C6CC900AB3192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74368988214C6CC900AB3192 /* Assets.xcassets */; };
 		7436898C214C6CC900AB3192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7436898A214C6CC900AB3192 /* LaunchScreen.storyboard */; };
 		74368997214C6CC900AB3192 /* plasticfishesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74368996214C6CC900AB3192 /* plasticfishesTests.swift */; };
 		743689A6214C833300AB3192 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689A5214C833300AB3192 /* DataSource.swift */; };
 		743689A8214C842300AB3192 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689A7214C842300AB3192 /* Fish.swift */; };
 		743689AB214C881600AB3192 /* FishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689AA214C881600AB3192 /* FishService.swift */; };
+		745DA50C2155ABB300C9DC9F /* FishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DA50A2155ABB300C9DC9F /* FishesViewController.swift */; };
+		745DA50D2155ABB300C9DC9F /* FishesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 745DA50B2155ABB300C9DC9F /* FishesViewController.xib */; };
+		745DA5102155AEB300C9DC9F /* FishesViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DA50E2155AEB300C9DC9F /* FishesViewCellTableViewCell.swift */; };
+		745DA5112155AEB300C9DC9F /* FishesViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 745DA50F2155AEB300C9DC9F /* FishesViewCellTableViewCell.xib */; };
+		745DA5132155C2B400C9DC9F /* FishesDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745DA5122155C2B400C9DC9F /* FishesDetail.storyboard */; };
+		745DA5152155C2DB00C9DC9F /* FishesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DA5142155C2DB00C9DC9F /* FishesDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +35,6 @@
 /* Begin PBXFileReference section */
 		7436897C214C6CC700AB3192 /* plasticfishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plasticfishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7436897F214C6CC700AB3192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74368981214C6CC700AB3192 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		74368983214C6CC700AB3192 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		74368986214C6CC700AB3192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74368988214C6CC900AB3192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7436898B214C6CC900AB3192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7436898D214C6CC900AB3192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +44,12 @@
 		743689A5214C833300AB3192 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		743689A7214C842300AB3192 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
 		743689AA214C881600AB3192 /* FishService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishService.swift; sourceTree = "<group>"; };
+		745DA50A2155ABB300C9DC9F /* FishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesViewController.swift; sourceTree = "<group>"; };
+		745DA50B2155ABB300C9DC9F /* FishesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishesViewController.xib; sourceTree = "<group>"; };
+		745DA50E2155AEB300C9DC9F /* FishesViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		745DA50F2155AEB300C9DC9F /* FishesViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishesViewCellTableViewCell.xib; sourceTree = "<group>"; };
+		745DA5122155C2B400C9DC9F /* FishesDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FishesDetail.storyboard; sourceTree = "<group>"; };
+		745DA5142155C2DB00C9DC9F /* FishesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +95,8 @@
 				743689A4214C832200AB3192 /* network */,
 				743689A1214C70F300AB3192 /* models */,
 				743689A3214C715900AB3192 /* views */,
-				743689A2214C70FC00AB3192 /* controllers */,
-				74368985214C6CC700AB3192 /* Main.storyboard */,
 				7436897F214C6CC700AB3192 /* AppDelegate.swift */,
+				745DA5092155AB8F00C9DC9F /* controllers */,
 				74368988214C6CC900AB3192 /* Assets.xcassets */,
 				7436898A214C6CC900AB3192 /* LaunchScreen.storyboard */,
 				7436898D214C6CC900AB3192 /* Info.plist */,
@@ -116,15 +121,6 @@
 			path = models;
 			sourceTree = "<group>";
 		};
-		743689A2214C70FC00AB3192 /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				74368981214C6CC700AB3192 /* MasterViewController.swift */,
-				74368983214C6CC700AB3192 /* DetailViewController.swift */,
-			);
-			path = controllers;
-			sourceTree = "<group>";
-		};
 		743689A3214C715900AB3192 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +142,19 @@
 				743689AA214C881600AB3192 /* FishService.swift */,
 			);
 			path = services;
+			sourceTree = "<group>";
+		};
+		745DA5092155AB8F00C9DC9F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				745DA50A2155ABB300C9DC9F /* FishesViewController.swift */,
+				745DA50B2155ABB300C9DC9F /* FishesViewController.xib */,
+				745DA50E2155AEB300C9DC9F /* FishesViewCellTableViewCell.swift */,
+				745DA50F2155AEB300C9DC9F /* FishesViewCellTableViewCell.xib */,
+				745DA5122155C2B400C9DC9F /* FishesDetail.storyboard */,
+				745DA5142155C2DB00C9DC9F /* FishesDetailViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745DA5112155AEB300C9DC9F /* FishesViewCellTableViewCell.xib in Resources */,
 				7436898C214C6CC900AB3192 /* LaunchScreen.storyboard in Resources */,
+				745DA50D2155ABB300C9DC9F /* FishesViewController.xib in Resources */,
+				745DA5132155C2B400C9DC9F /* FishesDetail.storyboard in Resources */,
 				74368989214C6CC900AB3192 /* Assets.xcassets in Resources */,
-				74368987214C6CC700AB3192 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745DA5152155C2DB00C9DC9F /* FishesDetailViewController.swift in Sources */,
+				745DA50C2155ABB300C9DC9F /* FishesViewController.swift in Sources */,
 				743689A8214C842300AB3192 /* Fish.swift in Sources */,
-				74368984214C6CC700AB3192 /* DetailViewController.swift in Sources */,
-				74368982214C6CC700AB3192 /* MasterViewController.swift in Sources */,
+				745DA5102155AEB300C9DC9F /* FishesViewCellTableViewCell.swift in Sources */,
 				743689A6214C833300AB3192 /* DataSource.swift in Sources */,
 				74368980214C6CC700AB3192 /* AppDelegate.swift in Sources */,
 				743689AB214C881600AB3192 /* FishService.swift in Sources */,
@@ -277,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		74368985214C6CC700AB3192 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74368986214C6CC700AB3192 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7436898A214C6CC900AB3192 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -16,6 +16,7 @@
 		743689CD214DFBB100AB3192 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689CC214DFBB100AB3192 /* MenuTableViewController.swift */; };
 		743689CF214DFBC300AB3192 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689CE214DFBC300AB3192 /* OrderTableViewController.swift */; };
 		743689D1214DFD1700AB3192 /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */; };
+		745DA50821549A3300C9DC9F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DA50721549A3300C9DC9F /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		743689CC214DFBB100AB3192 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		743689CE214DFBC300AB3192 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
+		745DA50721549A3300C9DC9F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				743689B8214DF64C00AB3192 /* AppDelegate.swift */,
 				743689BA214DF64C00AB3192 /* ViewController.swift */,
 				743689BC214DF64C00AB3192 /* Main.storyboard */,
+				745DA50721549A3300C9DC9F /* MenuItem.swift */,
 				743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */,
 				743689CA214DFBA000AB3192 /* CategoryTableViewController.swift */,
 				743689CC214DFBB100AB3192 /* MenuTableViewController.swift */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745DA50821549A3300C9DC9F /* MenuItem.swift in Sources */,
 				743689CD214DFBB100AB3192 /* MenuTableViewController.swift in Sources */,
 				743689D1214DFD1700AB3192 /* MenuItemDetailViewController.swift in Sources */,
 				743689CF214DFBC300AB3192 /* OrderTableViewController.swift in Sources */,
