@@ -20,6 +20,7 @@
 		745DA5112155AEB300C9DC9F /* FishesViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 745DA50F2155AEB300C9DC9F /* FishesViewCellTableViewCell.xib */; };
 		745DA5132155C2B400C9DC9F /* FishesDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745DA5122155C2B400C9DC9F /* FishesDetail.storyboard */; };
 		745DA5152155C2DB00C9DC9F /* FishesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DA5142155C2DB00C9DC9F /* FishesDetailViewController.swift */; };
+		CAE4BEE5215690300078B5ED /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4BEE4215690300078B5ED /* Client.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		745DA50F2155AEB300C9DC9F /* FishesViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishesViewCellTableViewCell.xib; sourceTree = "<group>"; };
 		745DA5122155C2B400C9DC9F /* FishesDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FishesDetail.storyboard; sourceTree = "<group>"; };
 		745DA5142155C2DB00C9DC9F /* FishesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesDetailViewController.swift; sourceTree = "<group>"; };
+		CAE4BEE4215690300078B5ED /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				743689AA214C881600AB3192 /* FishService.swift */,
+				CAE4BEE4215690300078B5ED /* Client.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				745DA5102155AEB300C9DC9F /* FishesViewCellTableViewCell.swift in Sources */,
 				743689A6214C833300AB3192 /* DataSource.swift in Sources */,
 				74368980214C6CC700AB3192 /* AppDelegate.swift in Sources */,
+				CAE4BEE5215690300078B5ED /* Client.swift in Sources */,
 				743689AB214C881600AB3192 /* FishService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GH7252HV58;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = plasticfishes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,7 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GH7252HV58;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = plasticfishes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

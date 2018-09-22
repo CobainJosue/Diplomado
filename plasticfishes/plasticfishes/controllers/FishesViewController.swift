@@ -12,7 +12,11 @@ class FishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var fishesTableView: UITableView!
     
-    var fishesArray = [Fish]()
+    var fishesArray: [Fish]? {
+        didSet {
+            self.fishesTableView.reloadData()
+        }
+    }
     
     //MARK: Views methods
     override func viewDidLoad() {
@@ -20,6 +24,7 @@ class FishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         setupView()
         doFishing()
+        loadFishes()
     }
     
     func setupView() {
@@ -36,21 +41,43 @@ class FishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         fishesTableView.reloadData()
     }
     
+    
+    func loadFishes() {
+//        fishesArray = FishService.listAll()
+        FishService.shared.all { (fishesArray) in
+            debugPrint(fishesArray)
+            self.fishesArray = fishesArray
+        }
+    }
+    
     //MARK: Table View Protocol Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
+        return fishesArray?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "fishCell", for: indexPath) as? FishesViewCellTableViewCell else {return UITableViewCell() }
         
-        //let fish = fishesArray[indexPath.row]
+        let fish = fishesArray?[indexPath.row]
         
-        cell.fishTitleLabel.text = "Pescado listado aqui"
-        cell.fishSubtitleLabel.text = "Esta sera la descripcion del pescado"
+        cell.fishTitleLabel.text = fish?.name
+        cell.fishSubtitleLabel.text = fish?.webUrl
         
-        cell.fishImageView.image = UIImage(named: "github-mark")
+        DispatchQueue.global(qos: .background).async {
+            if let imgData = fish?.imageData {
+                DispatchQueue.main.async {
+                    cell.fishImageView.image = UIImage(data: imgData)
+                }
+                
+            }
+        }
+        
+        
+        
+       // cell.fishImageView.image = UIImage(named: "github-mark")
+        
+        //Flechita de la tabla:
         cell.accessoryType = .disclosureIndicator
         
        /* if let imgURL = URL(string: fish.imageURL) {
@@ -74,5 +101,7 @@ class FishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    
 
 }
