@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74076885215DF8BB0027EAFF /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74076884215DF8BB0027EAFF /* IntermediaryModels.swift */; };
 		743689B9214DF64C00AB3192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689B8214DF64C00AB3192 /* AppDelegate.swift */; };
 		743689BB214DF64C00AB3192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689BA214DF64C00AB3192 /* ViewController.swift */; };
 		743689BE214DF64C00AB3192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743689BC214DF64C00AB3192 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74076884215DF8BB0027EAFF /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		743689B5214DF64C00AB3192 /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743689B8214DF64C00AB3192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		743689BA214DF64C00AB3192 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				743689BA214DF64C00AB3192 /* ViewController.swift */,
 				743689BC214DF64C00AB3192 /* Main.storyboard */,
 				745DA50721549A3300C9DC9F /* MenuItem.swift */,
+				74076884215DF8BB0027EAFF /* IntermediaryModels.swift */,
 				743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */,
 				743689CA214DFBA000AB3192 /* CategoryTableViewController.swift */,
 				743689CC214DFBB100AB3192 /* MenuTableViewController.swift */,
@@ -154,6 +157,7 @@
 				743689CD214DFBB100AB3192 /* MenuTableViewController.swift in Sources */,
 				743689D1214DFD1700AB3192 /* MenuItemDetailViewController.swift in Sources */,
 				743689CF214DFBC300AB3192 /* OrderTableViewController.swift in Sources */,
+				74076885215DF8BB0027EAFF /* IntermediaryModels.swift in Sources */,
 				743689BB214DF64C00AB3192 /* ViewController.swift in Sources */,
 				743689B9214DF64C00AB3192 /* AppDelegate.swift in Sources */,
 				743689CB214DFBA000AB3192 /* CategoryTableViewController.swift in Sources */,

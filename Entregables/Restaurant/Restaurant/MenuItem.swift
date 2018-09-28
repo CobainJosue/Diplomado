@@ -25,3 +25,7 @@ struct MenuItem: Codable {
         case imageURL = "image_url"
     }
 }
+
+struct MenuItems {
+    let items: [MenuItem]
+}
