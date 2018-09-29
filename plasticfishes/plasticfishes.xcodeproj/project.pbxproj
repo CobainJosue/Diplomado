@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740768A7215EE9A20027EAFF /* Form.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740768A6215EE9A20027EAFF /* Form.storyboard */; };
+		740768A9215EEA010027EAFF /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740768A8215EEA010027EAFF /* FormView.swift */; };
 		74368980214C6CC700AB3192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7436897F214C6CC700AB3192 /* AppDelegate.swift */; };
 		74368989214C6CC900AB3192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74368988214C6CC900AB3192 /* Assets.xcassets */; };
 		7436898C214C6CC900AB3192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7436898A214C6CC900AB3192 /* LaunchScreen.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		740768A6215EE9A20027EAFF /* Form.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Form.storyboard; sourceTree = "<group>"; };
+		740768A8215EEA010027EAFF /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		7436897C214C6CC700AB3192 /* plasticfishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plasticfishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7436897F214C6CC700AB3192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74368988214C6CC900AB3192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		743689A3214C715900AB3192 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				740768A6215EE9A20027EAFF /* Form.storyboard */,
+				740768A8215EEA010027EAFF /* FormView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				7436898C214C6CC900AB3192 /* LaunchScreen.storyboard in Resources */,
 				745DA50D2155ABB300C9DC9F /* FishesViewController.xib in Resources */,
 				745DA5132155C2B400C9DC9F /* FishesDetail.storyboard in Resources */,
+				740768A7215EE9A20027EAFF /* Form.storyboard in Resources */,
 				74368989214C6CC900AB3192 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 				745DA5102155AEB300C9DC9F /* FishesViewCellTableViewCell.swift in Sources */,
 				743689A6214C833300AB3192 /* DataSource.swift in Sources */,
 				74368980214C6CC700AB3192 /* AppDelegate.swift in Sources */,
+				740768A9215EEA010027EAFF /* FormView.swift in Sources */,
 				CAE4BEE5215690300078B5ED /* Client.swift in Sources */,
 				743689AB214C881600AB3192 /* FishService.swift in Sources */,
 			);
