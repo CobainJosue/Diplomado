@@ -26,6 +26,6 @@ struct MenuItem: Codable {
     }
 }
 
-struct MenuItems {
+struct MenuItems: Codable {
     let items: [MenuItem]
 }
