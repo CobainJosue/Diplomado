@@ -13,5 +13,5 @@ struct Info: Codable {
 }
 
 struct Characters: Codable {
-    let characters: [Info]
+    var characters: [Info] = []
 }

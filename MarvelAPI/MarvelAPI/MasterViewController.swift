@@ -27,9 +27,9 @@ class MasterViewController: UITableViewController {
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
-        Marvel.shared.fetchSuperheroes { (names) in
-           // print(names)
+        Marvel.shared.fetchSuperheroes { [unowned self] (names) in
             if let names = names {
+                print(names)
                 self.updateUI(with: names)
             }
         }
