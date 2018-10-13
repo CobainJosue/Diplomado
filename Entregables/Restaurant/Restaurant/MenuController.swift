@@ -18,10 +18,7 @@ class MenuController {
         
         let task = URLSession.shared.dataTask(with: categoryURL) {
             (data, response, error) in
-            if let data = data,
-                let jsonDictionary = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                let categories = jsonDictionary?["categories"] as? [String] {
-                
+            if let data = data, let jsonDictionary = try? JSONSerialization.jsonObject(with: data) as? [String: Any], let categories = jsonDictionary?["categories"] as? [String] {
                 completion(categories)
                 
             } else { completion(nil) }

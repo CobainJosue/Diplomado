@@ -22,7 +22,15 @@ class MenuItemDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateUI()
+    }
+    
+    func updateUI() {
+        titleLabel.text = menuItem.name
+        priceLabel.text = String(format: "%.2f", menuItem.price)
+        descriptionLabel.text = menuItem.description
+        addToOrderButton.layer.cornerRadius = 5.0
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +38,15 @@ class MenuItemDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func orderButtonTapped(_ sender: UIButton) {
+        
+        UIView.animate(withDuration: 0.3) {
+            self.addToOrderButton.transform = CGAffineTransform(scaleX: 3.0, y: 3.0)
+            self.addToOrderButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 
