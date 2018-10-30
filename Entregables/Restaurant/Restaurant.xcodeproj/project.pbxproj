@@ -20,6 +20,7 @@
 		743689D1214DFD1700AB3192 /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */; };
 		745DA50821549A3300C9DC9F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DA50721549A3300C9DC9F /* MenuItem.swift */; };
 		74816EA82187D71600B582CC /* AddToOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74816EA72187D71600B582CC /* AddToOrder.swift */; };
+		74816EAA2187EE3700B582CC /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74816EA92187EE3700B582CC /* OrderConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		743689D0214DFD1700AB3192 /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 		745DA50721549A3300C9DC9F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		74816EA72187D71600B582CC /* AddToOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrder.swift; sourceTree = "<group>"; };
+		74816EA92187EE3700B582CC /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				743689C1214DF65000AB3192 /* LaunchScreen.storyboard */,
 				743689C4214DF65000AB3192 /* Info.plist */,
 				74816EA72187D71600B582CC /* AddToOrder.swift */,
+				74816EA92187EE3700B582CC /* OrderConfirmationViewController.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				743689BB214DF64C00AB3192 /* ViewController.swift in Sources */,
 				743689B9214DF64C00AB3192 /* AppDelegate.swift in Sources */,
 				743689CB214DFBA000AB3192 /* CategoryTableViewController.swift in Sources */,
+				74816EAA2187EE3700B582CC /* OrderConfirmationViewController.swift in Sources */,
 				74816EA82187D71600B582CC /* AddToOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
