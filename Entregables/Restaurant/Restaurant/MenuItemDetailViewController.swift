@@ -18,11 +18,19 @@ class MenuItemDetailViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var addToOrderButton: UIButton!
     
+    var delegate: AddToOrderDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         updateUI()
+        setUpDelegate()
+    }
+    
+    func setUpDelegate() {
+        if let navController = tabBarController?.viewControllers?.last as? UINavigationController, let orderTableViewController = navController.viewControllers.first as? OrderTableViewController {
+            delegate = orderTableViewController
+        }
     }
     
     func updateUI() {
@@ -44,6 +52,7 @@ class MenuItemDetailViewController: UIViewController {
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 3.0, y: 3.0)
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
+        delegate?.added(menuItem: menuItem)
         
     }
     

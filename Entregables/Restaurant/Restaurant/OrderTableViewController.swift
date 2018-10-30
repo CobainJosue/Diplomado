@@ -8,18 +8,27 @@
 
 import UIKit
 
-class OrderTableViewController: UITableViewController {
+class OrderTableViewController: UITableViewController, AddToOrderDelegate {
     
     var menuItems = [MenuItem]()
+    
+    func added(menuItem: MenuItem) {
+        menuItems.append(menuItem)
+        let count = menuItems.count
+        let indexPath = IndexPath(row: count-1, section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
+        updateBagdeNumber()
+    }
 
+    //MARK: viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
+    func updateBagdeNumber() {
+        let badgeValue = menuItems.count > 0 ? "\(menuItems.count)" : nil
+        navigationController?.tabBarItem.badgeValue = badgeValue
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,12 +40,24 @@ class OrderTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return menuItems.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return menuItems.count
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            menuItems.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            updateBagdeNumber()
+        }
     }
 
     
