@@ -56,7 +56,7 @@ class NetworkTests: XCTestCase {
     func testMusicSongs() {
         var resultSongs: [Song] = []
         let promise = expectation(description: "Songs Downloaded")
-        Music.fetchSongs { (songs) in
+        Music.fetchSongs { (songs: [Song]) in
             resultSongs = songs
             promise.fulfill()
         }
