@@ -14,7 +14,7 @@ class User {
     static let session = Session.sharedInstance
     
     static func login(userName: String, password: String) -> Bool {
-        if self.userName == userName {
+        if self.userName == userName && self.password == password{
             session.saveSession()
             return true
         }

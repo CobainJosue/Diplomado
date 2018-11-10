@@ -12,9 +12,9 @@ class Music {
     static var urlSession = URLSession(configuration: .default)
     
     //El escaping determina si la clousure se ejecutara antes o despues del cuerpo de la funcion
-    static func fetchSongs(songName: String = "TheBeatles", onSuccess: @escaping ([Song]) -> Void) {
+    static func fetchSongs(songName: String = "Queen", onSuccess: @escaping ([Song]) -> Void) {
         
-        let url = URL(string: "https://itunes.apple.com/search?media=music&entity=song&term=Queen")
+        let url = URL(string: "https://itunes.apple.com/search?media=music&entity=song&term=\(songName)")
         
         let dataTask = urlSession.dataTask(with: url!) { data, response, error in
             if error == nil {
