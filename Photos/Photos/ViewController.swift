@@ -43,6 +43,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
         }))
         
+        actionSheet.addAction(UIAlertAction(title: "biblioteca", style: .default, handler: abrirCarrete))
+        
         actionSheet.addAction(UIAlertAction(title: "Camara", style: .default, handler: { (action) in
             imagePickerView.sourceType = .camera
             imagePickerView.allowsEditing = true
@@ -50,6 +52,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.present(imagePickerView, animated: true, completion: nil)
         }))
         present(actionSheet, animated: true, completion: nil)
+    }
+    
+    func abrirCarrete(action: UIAlertAction) {
+        let imagePickerView = UIImagePickerController()
+        
+        imagePickerView.sourceType = .photoLibrary
+        imagePickerView.allowsEditing = true
+        imagePickerView.delegate = self
+        
+        present(imagePickerView, animated: true, completion: nil)
     }
     
     //MARK: PickerView Delegate

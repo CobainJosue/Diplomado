@@ -22,7 +22,7 @@ class LabTunesTests: XCTestCase {
     }
     
     func testCorrectLogin() {
-        XCTAssertTrue(User.login(userName: "iOSLab", password: "Test"))
+        XCTAssertTrue(User.login(userName: "iOSLab", password: "verysecurepassword"))
     }
     
     func testWrongLogin() {
@@ -31,7 +31,7 @@ class LabTunesTests: XCTestCase {
     
     func testSaveSession() {
         let session = Session.sharedInstance
-        let _ = User.login(userName: "iOSLab", password: "223")
+        let _ = User.login(userName: "iOSLab", password: "verysecurepassword")
         XCTAssertNotNil(session.token)
     }
     
@@ -42,14 +42,14 @@ class LabTunesTests: XCTestCase {
     }
     
     func testExpectedToken() {
-        let _ = User.login(userName: "iOSLab", password: "223")
+        let _ = User.login(userName: "iOSLab", password: "verysecurepassword")
         let session = Session.sharedInstance
         XCTAssertEqual(session.token!, "1234567890", "Token Should Match")
     }
     
     func testNotExpectedToken() {
         let session = Session.sharedInstance
-        let _ = User.login(userName: "iOSLab", password: "223")
+        let _ = User.login(userName: "iOSLab", password: "verysecurepassword")
         XCTAssertNotEqual(session.token!, "123456789", "Token Should not match")
     }
     
